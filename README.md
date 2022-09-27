@@ -1,1 +1,1 @@
-![Alt text](C:\fstar\Androidpic\1.jpg)
+<img src="./pic/1.jpg">
