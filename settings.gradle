@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Helloworld"
-include ':app'
+include ':HelloWorld'
+include ':Interface layout'
+include ':sy_2'
