@@ -1,8 +1,11 @@
 #Android界面组件实验
 **主界面**
 跳转到以下4个相应的界面
+
 ![主界面](./pic/main.jpg)
+
 ![app主界面](./pic/phone_main.jpg)
+
 MainActivity.java
 ```
 public class MainActivity extends AppCompatActivity {
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 ###1.Android ListView的用法
+
 ![ListView](./pic/ListView.jpg)
 
 **1.1 利用SimpleAdapter实现，使用Toast显示选中的列表项信息。**
@@ -92,8 +96,11 @@ ListviewActivity.java
 }
 ```
 ###2.创建自定义布局的AlertDialog
+
 ![AlterDialog](./pic/AlterDialog.jpg)
+
 ![phone_AlterDialog](./pic/phone_AlterDialog.jpg)
+
 **2.1 alter_dialog.xml定义布局**
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -172,8 +179,12 @@ MainActivity.java
 ```
 
 ###3.使用XML定义菜单
+
 ![XML定义菜单](./pic/XML.jpg)  
+
 ![XML](./pic/phone_XML.jpg) ![phone_XML_font](./pic/phone_XML_font.jpg)  ![phone_XML_color](./pic/phone_XML_color.jpg) ![phone_XML_menu](./pic/phone_XML_menu.jpg)
+
+
 字体大小：点击之后设计测试文本的字体。
 普通菜单项：点击之后弹出Toast提示。
 字体颜色：点击之后设置测试文本的字体。
@@ -221,9 +232,13 @@ public class MenuActivity extends AppCompatActivity {
 ```
 
 ###4.创建上下文操作模式（ActionMode）的上下文菜单
+
 ![ActionMode](./pic/ActionMode.jpg)
+
 ![ActionMode_row](./pic/ActionMode_row.jpg)
+
 ![phone_ActionMode](./pic/phone_ActionMode.jpg)
+
 1.使用ListView创建List。
 2.为List Item创建ActionMode形式的上下文菜单。
 
@@ -387,6 +402,7 @@ public class AdapterCur extends BaseAdapter {
 
 ```
 **4.5 加载布局文件，定义相应变量，数据进行填充，为ListView设置适配器并设置监听，对actionMode菜单的每个按钮设置各自对应的点击事件**
+
 ActionModeActivity.java
 ```
 public class ActionModeActivity extends AppCompatActivity {

@@ -51,6 +51,7 @@
 ```
 
 界面布局：
+
 ![时间戳布局](./pic/noteslistitem.jpg)
 
 **2.修改NoteList.java中的PROJECTION,添加NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE字段，在后面的搜索才能读取到修改的时间**：
@@ -85,6 +86,7 @@
 ```
 
 **效果图**：
+
 ![时间戳](./pic/time.jpg)
 
 
@@ -212,9 +214,13 @@ public class NoteSearch extends Activity implements SearchView.OnQueryTextListen
 ```
 
 **效果图：**
+
 按照标题搜索：
+
 ![按照标题搜索](./pic/search_title.jpg)
+
 按照内容搜索：
+
 ![内容](./pic/Hello_index.jpg) ![按照内容搜索](./pic/search_index.jpg)
 
 
@@ -348,9 +354,13 @@ MyCursorAdapter adapter= new MyCursorAdapter(
     );
 ```
 **效果图：**
+
 原版：
+
 ![原版](./pic/old.jpg)
+
 新版：
+
 ![新版](./pic/new.jpg)
 
 
@@ -403,24 +413,10 @@ MyCursorAdapter adapter= new MyCursorAdapter(
         ......
 </LinearLayout>       
 ```
+
 ![背景色布局](./pic/note_color.jpg)
 
-**13.新建资源文件color.xml，所有的背景颜色都在其中**：
-
-```
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="yellow">#FFEB3B</color>
-    <color name="green">#4CAF50</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="grey">#BABAB6</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="red">#FF5722</color>
-</resources>
-```
-
-**14.创建NoteColor.java选择颜色**：
+**13.创建NoteColor.java选择颜色**：
 
 ```
 public class NoteColor extends Activity {
@@ -505,6 +501,7 @@ public class NoteColor extends Activity {
 ```
 
 **效果图：**
+
 ![选择颜色](./pic/color.jpg) ![背景色效果图](./pic/background_color.jpg)
 
 
@@ -567,6 +564,7 @@ public class NoteColor extends Activity {
 ```
 
 **效果图：**
+
 ![按照创建时间排序](./pic/sort_creat_time.jpg)
 
  按修改时间排序：
@@ -593,6 +591,7 @@ public class NoteColor extends Activity {
 
 **效果图：**
 按照修改时间排序：
+
 ![按照修改时间排序](./pic/sort_update_time.jpg)
 
 按照颜色排序：
@@ -619,4 +618,5 @@ public class NoteColor extends Activity {
 
 **效果图：**
 按照颜色排序：
+
 ![按照颜色排序](./pic/sort_color.jpg)
