@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Helloworld"
 include ':HelloWorld'
 include ':Interfac_layout'
-include ':sy_2'
+include ':interface_components'

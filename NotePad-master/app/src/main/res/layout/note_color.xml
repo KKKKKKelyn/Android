@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/white"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:onClick="white"
+        />
+    <ImageButton
+        android:id="@+id/grey"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/grey"
+        android:layout_weight="1"
+        android:onClick="grey"
+        />
+
+    <ImageButton
+        android:id="@+id/red"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:layout_weight="1"
+        android:onClick="red"
+        />
+    <ImageButton
+        android:id="@+id/yellow"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:layout_weight="1"
+        android:onClick="yellow"
+        />
+    <ImageButton
+        android:id="@+id/green"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:layout_weight="1"
+        android:onClick="green"
+        />
+    <ImageButton
+        android:id="@+id/teal_200"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:layout_weight="1"
+        android:onClick="teal_200"
+        />
+    <ImageButton
+        android:id="@+id/teal_700"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        android:layout_weight="1"
+        android:onClick="teal_700"
+        />
+
+</LinearLayout>
