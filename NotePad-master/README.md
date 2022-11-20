@@ -2,7 +2,7 @@
 
 实现了时间戳和搜索(标题、内容)两个基本功能，以及更改记事本的背景色和记事本按照创建时间、修改时间和颜色进行排序的扩展功能。
 
-##一、结构
+## 一、结构
 
 **类：**
 
@@ -28,9 +28,9 @@
 >+ list_context_menu.xml : 编辑笔记内容上下文菜单布局
 >+ list_option_menu.xml : 主页面菜单布局
 
-##二、基本功能
+## 二、基本功能
 
-###(一)时间戳
+### (一)时间戳
 
 布局文件：
 **1.notelist_item.xml添加一个TextView组件，用于存放时间**
@@ -91,7 +91,7 @@
 
 
 
-###(二)搜索功能(标题、内容)
+### (二)搜索功能(标题、内容)
 
 界面布局：
 **1.在主界面布局添加搜索组件，list_options_menu.xml添加搜索功能**
@@ -224,9 +224,9 @@ public class NoteSearch extends Activity implements SearchView.OnQueryTextListen
 ![内容](./pic/Hello_index.jpg) ![按照内容搜索](./pic/search_index.jpg)
 
 
-##三、拓展功能
+## 三、拓展功能
 
-###(一)背景色
+### (一)背景色
 
 **1.更换主题，在AndroidManifest.xml的Notelist的Activity中添加，使其主题变为白色**：
 
@@ -505,7 +505,8 @@ public class NoteColor extends Activity {
 ![选择颜色](./pic/color.jpg) ![背景色效果图](./pic/background_color.jpg)
 
 
-###(二)排序(创建时间、修改时间、颜色)
+### (二)排序(创建时间、修改时间、颜色)
+
 **1.在主界面布局添加搜索组件，在list_options_menu.xml添加排序功能，其中排序功能包括按创建时间、修改时间、颜色排序**
 
 ```
@@ -540,6 +541,7 @@ public class NoteColor extends Activity {
 
 ```
 **3.在Notelist中设置排序**：
+
 按照创建时间排序
 
 ```
@@ -590,6 +592,7 @@ public class NoteColor extends Activity {
 ```
 
 **效果图：**
+
 按照修改时间排序：
 
 ![按照修改时间排序](./pic/sort_update_time.jpg)
@@ -617,6 +620,7 @@ public class NoteColor extends Activity {
 ```
 
 **效果图：**
+
 按照颜色排序：
 
 ![按照颜色排序](./pic/sort_color.jpg)

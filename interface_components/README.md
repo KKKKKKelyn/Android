@@ -1,5 +1,7 @@
-#Android界面组件实验
+# Android界面组件实验
+
 **主界面**
+
 跳转到以下4个相应的界面
 
 ![主界面](./pic/main.jpg)
@@ -7,6 +9,7 @@
 ![app主界面](./pic/phone_main.jpg)
 
 MainActivity.java
+
 ```
 public class MainActivity extends AppCompatActivity {
     Button bt1;
@@ -58,12 +61,14 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-###1.Android ListView的用法
+### 1.Android ListView的用法
 
 ![ListView](./pic/ListView.jpg)
 
 **1.1 利用SimpleAdapter实现，使用Toast显示选中的列表项信息。**
+
 ListviewActivity.java
+
 ```public class ListviewActivity extends AppCompatActivity {
 
     @Override
@@ -95,13 +100,14 @@ ListviewActivity.java
     }
 }
 ```
-###2.创建自定义布局的AlertDialog
+### 2.创建自定义布局的AlertDialog
 
 ![AlterDialog](./pic/AlterDialog.jpg)
 
 ![phone_AlterDialog](./pic/phone_AlterDialog.jpg)
 
 **2.1 alter_dialog.xml定义布局**
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -168,7 +174,9 @@ ListviewActivity.java
 </LinearLayout>
 ```
 **2.2 调用AlterDialog.Builder对象上的setView()将布局添加到AlterDialog.**
+
 MainActivity.java
+
 ```
    public  void showDiglog(){
         AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
@@ -178,7 +186,7 @@ MainActivity.java
     }
 ```
 
-###3.使用XML定义菜单
+### 3.使用XML定义菜单
 
 ![XML定义菜单](./pic/XML.jpg)  
 
@@ -186,7 +194,9 @@ MainActivity.java
 
 
 字体大小：点击之后设计测试文本的字体。
+
 普通菜单项：点击之后弹出Toast提示。
+
 字体颜色：点击之后设置测试文本的字体。
 
 MenuActivity.java
@@ -231,7 +241,7 @@ public class MenuActivity extends AppCompatActivity {
 }
 ```
 
-###4.创建上下文操作模式（ActionMode）的上下文菜单
+### 4.创建上下文操作模式（ActionMode）的上下文菜单
 
 ![ActionMode](./pic/ActionMode.jpg)
 
@@ -240,9 +250,11 @@ public class MenuActivity extends AppCompatActivity {
 ![phone_ActionMode](./pic/phone_ActionMode.jpg)
 
 1.使用ListView创建List。
+
 2.为List Item创建ActionMode形式的上下文菜单。
 
 **4.1 activity_action_mode.xml定义主界面，只有一个ListView,将choiceMode设置为multipleChoiceModal，可以为多选。**
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -303,7 +315,9 @@ public class MenuActivity extends AppCompatActivity {
 ```
 
 **4.3 编写Item类，每个选项对应的类，bo记录是否被选中，初始化为false**：
+
 Item.java
+
 ```
 public class Item {
     private String name;//显示的选项名
@@ -341,7 +355,9 @@ public class Item {
 ```
 
 **4.4 自定义适配器AdapterCur，继承 BaseAdapter**
+
 AdapterCur.java
+
 ```
 public class AdapterCur extends BaseAdapter {
     List<Item> list;  //item的list对象
@@ -404,6 +420,7 @@ public class AdapterCur extends BaseAdapter {
 **4.5 加载布局文件，定义相应变量，数据进行填充，为ListView设置适配器并设置监听，对actionMode菜单的每个按钮设置各自对应的点击事件**
 
 ActionModeActivity.java
+
 ```
 public class ActionModeActivity extends AppCompatActivity {
     private  ListView listView;

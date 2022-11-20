@@ -1,5 +1,6 @@
-#实验二:Interfacelayout
-##1.线性布局
+# 实验二:Interfacelayout
+## 1.线性布局
+
 利用线性布局实现：
 
 ![线性布局](./pic/Linear_layout.png)
@@ -7,6 +8,7 @@
 **1.1 在code中对Button的width、height、marginTop、marginLeft、text每一个属性进行设计实现。**
 
 layout.xml
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -125,7 +127,8 @@ layout.xml
 </LinearLayout>
 
 ```
-##2.表格布局
+## 2.表格布局
+
 利用表格布局实现
 
 ![表格布局](./pic/Table_layout.png)
@@ -243,11 +246,14 @@ hellotablelayout.xml
 
 </TableLayout>
 ```
-##3.约束布局1
+## 3.约束布局1
+
 利用ConstraintLayout实现
+
 ![约束布局1](./pic/Constrain_%20layout1.png)
 
 **3.1在design中对各个组件的位置进行布局，code中对其text、backgroundTint进行修改。**
+
 ```
 constraint.xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -479,10 +485,12 @@ constraint.xml
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-##4.约束布局2
+## 4.约束布局2
+
 利用ConstraintLayout实现
 
 ![约束布局2](./pic/Constrain_%20layout2.png)
+
 **4.1在design中对ImageView、TextView、Button进行布局。**
 
 ```
