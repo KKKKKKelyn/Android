@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+    <Switch
+        android:id="@+id/switch_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="开3D"
+        android:textOff="关2D"
+        android:gravity="center_vertical"
+        android:showText="true"
+        android:checked="true" />
+    <RadioGroup
+        android:id="@+id/personalizemap_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/yulu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="玉露">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/yancui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="烟翠">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/danyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="澹月">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <com.tencent.tencentmap.mapsdk.maps.MapView
+        android:id="@+id/personalize_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.tencent.tencentmap.mapsdk.maps.MapView>
+
+</LinearLayout>
